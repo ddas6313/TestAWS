@@ -7,11 +7,12 @@ terraform {
     }
   }
 
-  backend "remote" {
-    organization = "sreyo23"
+  
+  cloud {
+    organization = "SREYO"
 
     workspaces {
-      name = "eks-cluster"
+      name = "AWS_CLUSTER"
     }
   }
 
